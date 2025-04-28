@@ -4,6 +4,8 @@ header, footer { background: linear-gradient(to right, #1e3a8a, #1e40af); paddin
 nav a { margin: 0 10px; color: #e0f2fe; text-decoration: none; font-weight: bold; }
 .hero { height: 400px; background: url('Front View Rendering.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; }
 .section { margin: 40px auto; padding: 20px; max-width: 1000px; background: rgba(255,255,255,0.05); border-radius: 12px; }
+.timeline-step { background: #1e40af; color: white; padding: 15px; margin: 10px 0; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.3s; }
+.timeline-step:hover { background-color: #2563eb; transform: scale(1.02); }
 #unitCarousel { display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 20px; padding: 20px 0; }
 .unit-card { min-width: 300px; flex: 0 0 auto; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .unit-card:hover { transform: scale(1.03); box-shadow: 0 6px 15px rgba(0,0,0,0.4); }
