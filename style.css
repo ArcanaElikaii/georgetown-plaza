@@ -1,18 +1,1 @@
-
-body { font-family: 'Inter', sans-serif; background: linear-gradient(to bottom right, #0f172a, #1e293b); margin: 0; color: #e0f2fe; }
-header, footer { background: linear-gradient(to right, #1e3a8a, #1e40af); padding: 20px; color: white; text-align: center; }
-nav a { margin: 0 10px; color: #e0f2fe; text-decoration: none; font-weight: bold; }
-.hero { height: 400px; background: url('Front View Rendering.png') center/cover no-repeat; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; }
-.section { margin: 40px auto; padding: 20px; max-width: 1000px; background: rgba(255,255,255,0.05); border-radius: 12px; }
-.timeline-step { background: #1e40af; color: white; padding: 15px; margin: 10px 0; border-radius: 8px; cursor: pointer; transition: background-color 0.3s, transform 0.3s; }
-.timeline-step:hover { background-color: #2563eb; transform: scale(1.02); }
-#unitCarousel { display: flex; overflow-x: auto; scroll-behavior: smooth; gap: 20px; padding: 20px 0; }
-.unit-card { min-width: 300px; flex: 0 0 auto; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.unit-card:hover { transform: scale(1.03); box-shadow: 0 6px 15px rgba(0,0,0,0.4); }
-.unit-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
-.unit-card .buttons { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
-.unit-card .view-btn { background: #3b82f6; padding: 8px 16px; border-radius: 20px; color: white; text-decoration: none; }
-.unit-card .apply-btn { background: #f59e0b; padding: 8px 16px; border-radius: 20px; color: white; text-decoration: none; }
-.scroll-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; z-index: 10; }
-.scroll-btn.left { left: -20px; }
-.scroll-btn.right { right: -20px; }
+iframe { display: block; margin: 30px auto; width: 90%; max-width: 1000px; height: 600px; border-radius: 12px; border: none; box-shadow: 0 4px 10px rgba(0,0,0,0.4); } .btn-instagram { display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; padding: 12px 20px; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border: none; border-radius: 25px; text-decoration: none; font-size: 16px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.4); transition: all 0.3s ease; }
