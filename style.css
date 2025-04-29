@@ -21,3 +21,16 @@ iframe { display: block; margin: 30px auto; width: 90%; max-width: 1000px; heigh
 .scroll-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; z-index: 10; }
 .scroll-btn.left { left: -20px; }
 .scroll-btn.right { right: -20px; }
+
+
+
+@media screen and (max-width: 768px) {
+  header, footer { text-align: center; flex-direction: column; }
+  nav a { display: inline-block; margin: 10px 5px; }
+  .hero { font-size: 1.8rem; text-align: center; padding: 20px; height: auto; background-size: cover; }
+  .section { padding: 15px; }
+  iframe { width: 100%; height: 400px; }
+  .unit-card { min-width: 260px; }
+  .carousel-container { flex-direction: column; align-items: stretch; }
+  .scroll-btn.left, .scroll-btn.right { display: none; }
+}
