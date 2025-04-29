@@ -78,3 +78,14 @@ header img {
     margin-bottom: 10px;
   }
 }
+
+
+header img {
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  header img {
+    height: 75px;
+    margin-bottom: 10px;
+  }
+}
