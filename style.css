@@ -36,7 +36,6 @@ iframe { display: block; margin: 30px auto; width: 90%; max-width: 1000px; heigh
 }
 
 
-header img {
   height: 60px;
   max-width: 100%;
 }
@@ -45,7 +44,6 @@ header img {
     flex-direction: column;
     padding: 10px 20px;
   }
-  header img {
     height: 45px;
     margin-bottom: 10px;
   }
@@ -57,5 +55,15 @@ header img {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+  }
+}
+
+header img {
+  height: 75px;
+}
+@media screen and (max-width: 768px) {
+  header img {
+    height: 60px;
+    margin-bottom: 10px;
   }
 }
