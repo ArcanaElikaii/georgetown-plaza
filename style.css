@@ -89,3 +89,14 @@ header img {
     margin-bottom: 10px;
   }
 }
+
+
+header img {
+  height: 115px;
+}
+@media screen and (max-width: 768px) {
+  header img {
+    height: 90px;
+    margin-bottom: 10px;
+  }
+}
