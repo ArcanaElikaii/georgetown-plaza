@@ -1,4 +1,10 @@
 
+function scrollUnits(direction) {
+  const carousel = document.getElementById('unitCarousel');
+  const scrollAmount = 340;
+  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
 function showDetail(phase) {
   const detail = document.getElementById('timeline-detail');
   switch (phase) {

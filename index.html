@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,77 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Georgetown Plaza</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <img src="Georgetown Logo v3.png" alt="Georgetown Logo" />
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#model">3D Model</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#about">Summary</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header>
+    <img src="Georgetown Logo v3.png" alt="Georgetown Logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#model">3D Model</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#about">Summary</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<div id="home" class="hero">
-  Georgetown Plaza Renovation Project
-</div>
+  <div id="home" class="hero">
+    Georgetown Plaza Renovation Project
+  </div>
 
-<section class="section" id="model">
-  <h2>3D Conceptual Model</h2>
-  <iframe src="https://your-fusion360-link-here" loading="lazy" title="3D Model"></iframe>
-  <p>The 3D model above represents the future vision for the Georgetown Plaza improvements.</p>
-  <ul>
-    <li>Modernized storefront facade</li>
-    <li>Outdoor seating and landscaping</li>
-    <li>Energy-efficient window systems</li>
-    <li>Updated roofing and signage structures</li>
-    <li>Nighttime lighting and security upgrades</li>
-  </ul>
-</section>
+  <section class="section" id="model">
+    <h2>3D Conceptual Model</h2>
+    <iframe src="https://your-fusion360-link-here" loading="lazy" title="3D Model"></iframe>
+    <p>The 3D model above represents the future vision for the Georgetown Plaza improvements.</p>
+    <ul>
+      <li>Modernized storefront facade</li>
+      <li>Outdoor seating and landscaping</li>
+      <li>Energy-efficient window systems</li>
+      <li>Updated roofing and signage structures</li>
+      <li>Nighttime lighting and security upgrades</li>
+    </ul>
+  </section>
 
-<hr class="section-divider">
+  <hr class="section-divider" />
 
-<section class="section" id="timeline">
-  <h2>Project Timeline</h2>
-  <div class="timeline-step" onclick="showDetail('design')">January - March: Design & Planning</div>
-  <div class="timeline-step" onclick="showDetail('demolition')">April - June: Demolition & Structural Work</div>
-  <div class="timeline-step" onclick="showDetail('interior')">July - September: Interior Construction</div>
-  <div class="timeline-step" onclick="showDetail('finishing')">October - December: Finishing Touches & Inspection</div>
-  <div id="timeline-detail" style="margin-top: 20px;"></div>
-</section>
+  <section class="section" id="timeline">
+    <h2>Project Timeline</h2>
+    <div class="timeline-step" onclick="showDetail('design')">January - March: Design & Planning</div>
+    <div class="timeline-step" onclick="showDetail('demolition')">April - June: Demolition & Structural Work</div>
+    <div class="timeline-step" onclick="showDetail('interior')">July - September: Interior Construction</div>
+    <div class="timeline-step" onclick="showDetail('finishing')">October - December: Finishing Touches & Inspection</div>
+    <div id="timeline-detail" style="margin-top: 20px;"></div>
+  </section>
 
-<hr class="section-divider">
+  <hr class="section-divider" />
 
-<section class="section" id="about">
-  <h2>Summary</h2>
-  <p>The Georgetown Plaza renovation project aims to rejuvenate the plaza with modern designs, sustainable features, and a renewed community focus. Our goal is to create an inviting destination for businesses and visitors alike.</p>
-</section>
+  <section class="section" id="about">
+    <h2>Summary</h2>
+    <p>The Georgetown Plaza renovation project aims to rejuvenate the plaza with modern designs, sustainable features, and a renewed community focus. Our goal is to create an inviting destination for businesses and visitors alike.</p>
+  </section>
 
-<hr class="section-divider">
+  <hr class="section-divider" />
 
-<section class="section" id="contact">
-  <h2>Contact Us</h2>
-  <p>If you'd like to learn more about this project or get in touch, please use the contact details below:</p>
-  <ul>
-    <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-    <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-    <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
-  </ul>
-  <a class="btn-instagram" href="https://www.instagram.com/georgetownplaza/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:20px;height:20px;">
-    Visit us on Instagram
-  </a>
-</section>
+  <section class="section" id="listings">
+    <h2>Available Units for Lease</h2>
+    <div class="carousel-container">
+      <button class="scroll-btn left" onclick="scrollUnits(-1)">❮</button>
+      <div id="unitCarousel">
+        <div class="unit-card"><img src="Unit1.jpg" alt="A1"><h3>A1</h3><p>$1,200/mo • Retail/Office</p><div class="buttons"><a href="#" class="view-btn">View</a><a href="#" class="apply-btn">Apply</a></div></div>
+        <div class="unit-card"><img src="Unit2.jpg" alt="B12"><h3>B12</h3><p>$1,100/mo • Retail/Office</p><div class="buttons"><a href="#" class="view-btn">View</a><a href="#" class="apply-btn">Apply</a></div></div>
+        <div class="unit-card"><img src="Unit3.jpg" alt="B13"><h3>B13</h3><p>$1,050/mo • Retail/Office</p><div class="buttons"><a href="#" class="view-btn">View</a><a href="#" class="apply-btn">Apply</a></div></div>
+      </div>
+      <button class="scroll-btn right" onclick="scrollUnits(1)">❯</button>
+    </div>
+  </section>
 
-<footer>
-  <p>Georgetown Plaza - 4545 Georgetown Pl, Stockton, CA 95207</p>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.115020530139!2d-121.3138609!3d37.9889991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900dab6478eaa5%3A0x832f80b9d95bde5f!2s4545%20Georgetown%20Pl%2C%20Stockton%2C%20CA%2095207!5e0!3m2!1sen!2sus!4v1713462840000!5m2!1sen!2sus"
-    width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe>
-</footer>
+  <hr class="section-divider" />
 
-<script src="scripts.js"></script>
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you'd like to learn more about this project or get in touch, please use the contact details below:</p>
+    <ul>
+      <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+      <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+    </ul>
+    <a class="btn-instagram" href="https://www.instagram.com/georgetownplaza/" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:20px;height:20px;">
+      Visit us on Instagram
+    </a>
+  </section>
+
+  <footer>
+    <p>Georgetown Plaza - 4545 Georgetown Pl, Stockton, CA 95207</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.115020530139!2d-121.3138609!3d37.9889991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900dab6478eaa5%3A0x832f80b9d95bde5f!2s4545%20Georgetown%20Pl%2C%20Stockton%2C%20CA%2095207!5e0!3m2!1sen!2sus!4v1713462840000!5m2!1sen!2sus"
+      width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
