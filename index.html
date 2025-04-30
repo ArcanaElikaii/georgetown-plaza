@@ -293,6 +293,26 @@
         margin-top: 10px;
       }
     }
+
+@media (min-width: 768px) {
+  .mobile-model-link {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-model-link {
+    display: block !important;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px !important;
+    padding: 10px;
+  }
+  nav a {
+    margin: 4px;
+  }
+}
 </style>
 </head>
 <body>
