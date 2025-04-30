@@ -313,6 +313,26 @@
     margin: 4px;
   }
 }
+
+.mobile-only { display: none; }
+
+@media (max-width: 767px) {
+  .mobile-only { display: block !important; text-align: center; }
+  .mobile-model-link {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    margin: 20px auto;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    text-align: center;
+    width: fit-content;
+  }
+}
 </style>
 </head>
 <body>
@@ -334,7 +354,7 @@
     </div>
     <div class="model-mobile">
       <a href="https://a360.co/4j6aKsz" target="_blank" class="model-launch-button">
-        <span class="mobile-model-link"><span class="mobile-model-link">Tap here for Interactable Model, then "View In Browser"</span></span>
+        <div class="mobile-only"><a class="mobile-model-link" href="https://a360.co/4j6aKsz" target="_blank"><div class="mobile-only"><a class="mobile-model-link" href="https://a360.co/4j6aKsz" target="_blank">Tap here for Interactable Model, then "View In Browser"</a></div></a></div>
       </a>
     </div>
   <div id="timeline-detail" style="margin-top: 20px; font-size: 1.1rem; line-height: 1.6;"></div>
