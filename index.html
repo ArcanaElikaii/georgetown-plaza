@@ -79,6 +79,48 @@
         margin-top: 10px;
       }
     }
+
+    .section-divider {
+      border: none;
+      border-top: 2px solid #334155;
+      margin: 60px auto;
+      width: 80%;
+    }
+    .btn-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+    .btn-instagram:hover {
+      filter: brightness(1.1);
+    }
+    @media (min-width: 768px) {
+      .hero img {
+        top: 10px !important;
+      }
+      .mobile-model-link {
+        display: none !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .mobile-model-link {
+        display: block !important;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+    }
 </style>
 </head>
 <body>
@@ -100,7 +142,7 @@
     </div>
     <div class="model-mobile">
       <a href="https://a360.co/4j6aKsz" target="_blank" class="model-launch-button">
-        <span class="mobile-model-link">Tap here for Interactable Model, then "View In Browser"</span>
+        <span class="mobile-model-link"><span class="mobile-model-link">Tap here for Interactable Model, then "View In Browser"</span></span>
       </a>
     </div>
   </section>
