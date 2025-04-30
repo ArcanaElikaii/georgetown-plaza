@@ -62,7 +62,24 @@
       border-radius: 12px;
       border: none;
     }
-  </style>
+  
+    @media (min-width: 768px) {
+      .hero img {
+        top: 10px !important;
+      }
+      .mobile-model-link {
+        display: none !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .mobile-model-link {
+        display: block !important;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+    }
+</style>
 </head>
 <body>
   <div class="hero">
@@ -83,7 +100,7 @@
     </div>
     <div class="model-mobile">
       <a href="https://a360.co/4j6aKsz" target="_blank" class="model-launch-button">
-        Tap here for Interactable Model, then "View In Browser"
+        <span class="mobile-model-link">Tap here for Interactable Model, then "View In Browser"</span>
       </a>
     </div>
   </section>
