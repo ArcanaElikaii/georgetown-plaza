@@ -68,11 +68,27 @@
         top: 10px !important;
       }
       .mobile-model-link {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin: 10px auto;
+  text-decoration: none;
+
         display: none !important;
       }
     }
     @media (max-width: 767px) {
       .mobile-model-link {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin: 10px auto;
+  text-decoration: none;
+
         display: block !important;
         text-align: center;
         font-size: 1rem;
@@ -110,11 +126,27 @@
         top: 10px !important;
       }
       .mobile-model-link {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin: 10px auto;
+  text-decoration: none;
+
         display: none !important;
       }
     }
     @media (max-width: 767px) {
       .mobile-model-link {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin: 10px auto;
+  text-decoration: none;
+
         display: block !important;
         text-align: center;
         font-size: 1rem;
@@ -145,19 +177,22 @@
         <span class="mobile-model-link"><span class="mobile-model-link">Tap here for Interactable Model, then "View In Browser"</span></span>
       </a>
     </div>
-  </section>
+  <div id="timeline-detail" style="margin-top: 20px; font-size: 1.1rem; line-height: 1.6;"></div>
+</section>
 
 <section class="section" id="timeline">
   <h2>Project Timeline</h2>
-  <div class="timeline-step">January - March: Design & Planning</div>
-  <div class="timeline-step">April - June: Demolition & Structural Work</div>
-  <div class="timeline-step">July - September: Interior Construction</div>
-  <div class="timeline-step">October - December: Finishing Touches & Inspection</div>
+  <div class="timeline-step"><div class="timeline-step" onclick="showDetail('design')">January - March: Design & Planning</div></div>
+  <div class="timeline-step"><div class="timeline-step" onclick="showDetail('demolition')">April - June: Demolition & Structural Work</div></div>
+  <div class="timeline-step"><div class="timeline-step" onclick="showDetail('interior')">July - September: Interior Construction</div></div>
+  <div class="timeline-step"><div class="timeline-step" onclick="showDetail('finishing')">October - December: Finishing Touches & Inspection</div></div>
+<div id="timeline-detail" style="margin-top: 20px; font-size: 1.1rem; line-height: 1.6;"></div>
 </section>
 
 <section class="section" id="about">
   <h2>Summary</h2>
   <p>The Georgetown Plaza renovation project is a forward-looking initiative aimed at modernizing and revitalizing a long-standing commercial space. Our vision focuses on creating a more dynamic, visually appealing, and functional environment that better serves the needs of our tenants and the surrounding community.</p>
+<div id="timeline-detail" style="margin-top: 20px; font-size: 1.1rem; line-height: 1.6;"></div>
 </section>
 
 
@@ -241,7 +276,8 @@
       </div>
       
     </div>
-  </section><section class="section" id="contact">
+  <div id="timeline-detail" style="margin-top: 20px; font-size: 1.1rem; line-height: 1.6;"></div>
+</section><section class="section" id="contact">
   <h2>Contact Us</h2>
   <ul>
     <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
@@ -252,6 +288,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:20px;height:20px;">
     Visit us on Instagram
   </a>
+<div id="timeline-detail" style="margin-top: 20px; font-size: 1.1rem; line-height: 1.6;"></div>
 </section>
 
   <footer>
