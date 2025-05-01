@@ -5,23 +5,20 @@ body {
   background: #0f172a;
   color: #e0f2fe;
 }
-header.hero {
-  background-image: url('Front View Rendering.png');
-  background-size: cover;
-  background-position: center;
+.hero {
+  background: url('Front View Rendering.png') center/cover no-repeat;
   text-align: center;
   padding: 100px 20px 40px;
 }
 .logo {
-  max-width: 120px;
+  width: 120px;
   margin-bottom: 20px;
 }
 nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  gap: 20px;
 }
 nav a {
   color: white;
@@ -29,86 +26,91 @@ nav a {
   font-weight: bold;
 }
 .section {
+  padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
-  padding: 40px 20px;
   background: #1e293b;
+  border-radius: 12px;
   margin-top: 40px;
-  border-radius: 8px;
-}
-.model-container iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
 }
 .timeline-step {
   background: #1e40af;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.timeline-step:hover {
+  background: #2563eb;
+  transform: scale(1.02);
 }
 .carousel {
   display: flex;
-  align-items: center;
-  position: relative;
-}
-.cards-container {
-  display: flex;
-  overflow-x: auto;
   gap: 20px;
+  overflow-x: auto;
   scroll-behavior: smooth;
+  padding: 10px 0;
 }
 .unit-card {
-  flex: 0 0 auto;
-  width: 250px;
+  flex: 0 0 280px;
   background: #1e3a8a;
-  border-radius: 8px;
-  padding: 10px;
-  color: white;
+  padding: 16px;
+  border-radius: 12px;
 }
 .unit-card img {
   width: 100%;
   border-radius: 8px;
 }
-.card-buttons a {
-  background: #3b82f6;
-  padding: 5px 10px;
-  margin: 5px;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
+.card-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
 }
+.view-btn, .apply-btn {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+.view-btn { background-color: #3b82f6; }
+.apply-btn { background-color: #f59e0b; }
 .carousel-btn {
   position: absolute;
   top: 50%;
-  background: #1e40af;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
   color: white;
   border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   font-size: 20px;
   cursor: pointer;
-  transform: translateY(-50%);
-  z-index: 10;
 }
-.carousel-btn.left { left: 0; }
-.carousel-btn.right { right: 0; }
+.carousel-btn.left { left: 10px; }
+.carousel-btn.right { right: 10px; }
 .btn-instagram {
+  display: inline-flex;
+  align-items: center;
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
   padding: 10px 20px;
+  border-radius: 30px;
   color: white;
-  border-radius: 20px;
   text-decoration: none;
-  display: inline-block;
   margin-top: 20px;
 }
 footer {
-  text-align: center;
-  padding: 20px;
   background: #1e3a8a;
+  text-align: center;
+  padding: 40px;
   color: white;
 }
 footer iframe {
   width: 100%;
-  height: 250px;
-  margin-top: 20px;
+  height: 300px;
   border: none;
+  border-radius: 8px;
+  margin-top: 20px;
 }
