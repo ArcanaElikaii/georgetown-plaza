@@ -1,14 +1,13 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Georgetown Plaza</title>
-<link href="Georgetown Logo v3.png" rel="icon" type="image/png"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Georgetown Plaza</title>
+  <link rel="icon" type="image/png" href="Georgetown Logo v3.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
     html, body {
       margin: 0;
       padding: 0;
@@ -80,194 +79,145 @@
         margin-top: 10px;
       }
     }
-
-.timeline-step {
-  background: #1e40af;
-  color: white;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 8px;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.3s;
-}
-.timeline-step:hover {
-  background-color: #2563eb;
-  transform: scale(1.02);
-}
-#unitCarousel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 10px;
-}
-#unitCarousel::-webkit-scrollbar {
-  display: none;
-}
 </style>
-<script>
-function showDetail(phase) {
-  const detail = document.getElementById('timeline-detail');
-  let text = '';
-  switch (phase) {
-    case 'design': text = 'Collaborated on design concepts, prepared drafts, and acquired permits.'; break;
-    case 'demolition': text = 'Removed old structures and upgraded foundations for safety.'; break;
-    case 'interior': text = 'Built interior layout, ran electrical/plumbing, installed smart systems.'; break;
-    case 'finishing': text = 'Final inspections, detailed exterior work, and landscaping completed.'; break;
-  }
-  detail.innerHTML = `<p>${text}</p>`;
-}
-
-function scrollUnits(direction) {
-  const carousel = document.getElementById('unitCarousel');
-  const scrollAmount = 960;
-  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-}
-</script></head>
+</head>
 <body>
-<div class="hero">
-<img alt="Georgetown Logo" src="Georgetown Logo v3.png"/>
-<h1>Georgetown Revitalization Project</h1>
-</div>
-<nav>
-<a href="#model">3D Model</a>
-<a href="#timeline">Timeline</a>
-<a href="#about">Summary</a>
-<a href="#contact">Contact</a>
-<a href="#listings">Units</a>
-</nav>
+  <div class="hero">
+    <img src="Georgetown Logo v3.png" alt="Georgetown Logo" />
+    <h1>Georgetown Revitalization Project</h1>
+  </div>
+  <nav>
+    <a href="#model">3D Model</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#about">Summary</a>
+    <a href="#contact">Contact</a>
+    <a href="#listings">Units</a>
+  </nav>
 <section class="section" id="model">
-<h2>3D Conceptual Model</h2>
-<div class="model-desktop">
-<iframe allowfullscreen="" loading="lazy" src="https://a360.co/4j6aKsz" title="3D Model"></iframe>
-</div>
-<div class="model-mobile">
-<a class="model-launch-button" href="https://a360.co/4j6aKsz" target="_blank">
-<span class="mobile-model-link">Tap here for Interactable Model, then "View In Browser"</span>
-</a>
-</div>
-</section>
+    <h2>3D Conceptual Model</h2>
+    <div class="model-desktop">
+      <iframe src="https://a360.co/4j6aKsz" loading="lazy" title="3D Model" allowfullscreen></iframe>
+    </div>
+    <div class="model-mobile">
+      <a href="https://a360.co/4j6aKsz" target="_blank" class="model-launch-button">
+        <span class="mobile-model-link">Tap here for Interactable Model, then "View In Browser"</span>
+      </a>
+    </div>
+  </section>
+
 <section class="section" id="timeline">
-<h2>Project Timeline</h2>
-<div class="timeline-step" onclick="showDetail('design')">January - March: Design &amp; Planning</div>
-<div class="timeline-step" onclick="showDetail('demolition')">April - June: Demolition &amp; Structural Work</div>
-<div class="timeline-step" onclick="showDetail('interior')">July - September: Interior Construction</div>
-<div class="timeline-step" onclick="showDetail('finishing')">October - December: Finishing Touches &amp; Inspection</div>
-<div id="timeline-detail" style="margin-top: 20px; font-size: 1.1rem; line-height: 1.6;"></div>
+  <h2>Project Timeline</h2>
+  <div class="timeline-step">January - March: Design & Planning</div>
+  <div class="timeline-step">April - June: Demolition & Structural Work</div>
+  <div class="timeline-step">July - September: Interior Construction</div>
+  <div class="timeline-step">October - December: Finishing Touches & Inspection</div>
 </section>
+
 <section class="section" id="about">
-<h2>Summary</h2>
-<p>The Georgetown Plaza renovation project is a forward-looking initiative aimed at modernizing and revitalizing a long-standing commercial space. Our vision focuses on creating a more dynamic, visually appealing, and functional environment that better serves the needs of our tenants and the surrounding community.</p>
+  <h2>Summary</h2>
+  <p>The Georgetown Plaza renovation project is a forward-looking initiative aimed at modernizing and revitalizing a long-standing commercial space. Our vision focuses on creating a more dynamic, visually appealing, and functional environment that better serves the needs of our tenants and the surrounding community.</p>
 </section>
-<section class="section" id="listings">
-<h2>Available Units for Lease</h2>
-<div style="position: relative; max-width: 1000px; margin: auto;">
-<div id="unitCarousel" style="display: flex; transition: transform 0.5s ease; gap: 20px; overflow: hidden;">
-<div style="display: flex; gap: 20px;">
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit1" src="Unit1.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 1</h3>
-<p>$1025/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-1.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-1.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit2" src="Unit2.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 2</h3>
-<p>$1050/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-2.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-2.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit3" src="Unit3.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 3</h3>
-<p>$1075/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-3.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-3.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit4" src="Unit4.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 4</h3>
-<p>$1100/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-4.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-4.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit5" src="Unit5.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 5</h3>
-<p>$1125/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-5.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-5.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit6" src="Unit6.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 6</h3>
-<p>$1150/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-6.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-6.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit7" src="Unit7.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 7</h3>
-<p>$1175/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-7.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-7.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit8" src="Unit8.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 8</h3>
-<p>$1200/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-8.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-8.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-<div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-<img alt="Unit9" src="Unit9.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
-<h3 style="margin-top: 10px;">Unit 9</h3>
-<p>$1225/mo • Retail/Office</p>
-<div style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
-<a href="https://apply-link-9.com" style="background: #3b82f6; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">View</a>
-<a href="https://apply-link-9.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
-</div>
-</div>
-</div>
-<button onclick="scrollUnits(-1)" style="position: absolute; top: 50%; left: -20px; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; z-index: 10;">❮</button>
-<button onclick="scrollUnits(1)" style="position: absolute; top: 50%; right: -20px; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; z-index: 10;">❯</button>
-</div>
 
 
-</section><section class="section" id="contact">
-<h2>Contact Us</h2>
-<ul>
-<li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-<li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-<li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
-</ul>
-<a class="btn-instagram" href="https://www.instagram.com/georgetownplaza/" target="_blank">
-<img alt="Instagram" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width:20px;height:20px;"/>
+
+
+
+  <section class="section" id="listings">
+    <h2>Available Units for Lease</h2>
+    <div class="unit-carousel">
+      
+      <div class="unit-card">
+        <img src="Unit1.jpg" alt="Unit1">
+        <h3>Unit 1</h3>
+        <p>$1025/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+      <div class="unit-card">
+        <img src="Unit2.jpg" alt="Unit2">
+        <h3>Unit 2</h3>
+        <p>$1050/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+      <div class="unit-card">
+        <img src="Unit3.jpg" alt="Unit3">
+        <h3>Unit 3</h3>
+        <p>$1075/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+      <div class="unit-card">
+        <img src="Unit4.jpg" alt="Unit4">
+        <h3>Unit 4</h3>
+        <p>$1100/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+      <div class="unit-card">
+        <img src="Unit5.jpg" alt="Unit5">
+        <h3>Unit 5</h3>
+        <p>$1125/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+      <div class="unit-card">
+        <img src="Unit6.jpg" alt="Unit6">
+        <h3>Unit 6</h3>
+        <p>$1150/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+      <div class="unit-card">
+        <img src="Unit7.jpg" alt="Unit7">
+        <h3>Unit 7</h3>
+        <p>$1175/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+      <div class="unit-card">
+        <img src="Unit8.jpg" alt="Unit8">
+        <h3>Unit 8</h3>
+        <p>$1200/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+      <div class="unit-card">
+        <img src="Unit9.jpg" alt="Unit9">
+        <h3>Unit 9</h3>
+        <p>$1225/mo • Retail/Office</p>
+        <a href="#" class="view">View</a>
+        <a href="#" class="apply">Apply</a>
+      </div>
+      
+    </div>
+  </section><section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <ul>
+    <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+    <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+    <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+  </ul>
+  <a class="btn-instagram" href="https://www.instagram.com/georgetownplaza/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:20px;height:20px;">
     Visit us on Instagram
   </a>
 </section>
-<footer>
-<p>Georgetown Plaza - 4545 Georgetown Pl, Stockton, CA 95207</p>
-<iframe allowfullscreen="" height="300" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.115020530139!2d-121.3138609!3d37.9889991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900dab6478eaa5%3A0x832f80b9d95bde5f!2s4545%20Georgetown%20Pl%2C%20Stockton%2C%20CA%2095207!5e0!3m2!1sen!2sus!4v1713462840000!5m2!1sen!2sus" style="border:0; border-radius: 8px; margin-top: 20px;" width="100%"></iframe>
-</footer>
+
+  <footer>
+    <p>Georgetown Plaza - 4545 Georgetown Pl, Stockton, CA 95207</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.115020530139!2d-121.3138609!3d37.9889991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900dab6478eaa5%3A0x832f80b9d95bde5f!2s4545%20Georgetown%20Pl%2C%20Stockton%2C%20CA%2095207!5e0!3m2!1sen!2sus!4v1713462840000!5m2!1sen!2sus"
+      width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe>
+  </footer>
 </body>
 </html>
+</body></html>
