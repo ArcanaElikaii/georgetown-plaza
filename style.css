@@ -114,3 +114,26 @@ footer iframe {
   border-radius: 8px;
   margin-top: 20px;
 }
+
+.carousel {
+  position: relative;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel-btn.left { left: 0; }
+.carousel-btn.right { right: 0; }
