@@ -137,3 +137,10 @@ footer iframe {
 }
 .carousel-btn.left { left: 0; }
 .carousel-btn.right { right: 0; }
+
+.nav-separator {
+  border: none;
+  border-top: 2px solid #334155;
+  margin: 20px auto 0;
+  width: 90%;
+}
