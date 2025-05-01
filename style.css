@@ -144,3 +144,15 @@ footer iframe {
   margin: 20px auto 0;
   width: 90%;
 }
+
+.nav-bar {
+  background: #1e3a8a;
+  padding: 10px 20px;
+  text-align: center;
+}
+.nav-bar nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
