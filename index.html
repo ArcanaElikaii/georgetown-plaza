@@ -80,8 +80,51 @@
         margin-top: 10px;
       }
     }
+
+.timeline-step {
+  background: #1e40af;
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.timeline-step:hover {
+  background-color: #2563eb;
+  transform: scale(1.02);
+}
+#unitCarousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+#unitCarousel::-webkit-scrollbar {
+  display: none;
+}
 </style>
-</head>
+<script>
+function showDetail(phase) {
+  const detail = document.getElementById('timeline-detail');
+  let text = '';
+  switch (phase) {
+    case 'design': text = 'Collaborated on design concepts, prepared drafts, and acquired permits.'; break;
+    case 'demolition': text = 'Removed old structures and upgraded foundations for safety.'; break;
+    case 'interior': text = 'Built interior layout, ran electrical/plumbing, installed smart systems.'; break;
+    case 'finishing': text = 'Final inspections, detailed exterior work, and landscaping completed.'; break;
+  }
+  detail.innerHTML = `<p>${text}</p>`;
+}
+
+function scrollUnits(direction) {
+  const carousel = document.getElementById('unitCarousel');
+  const scrollAmount = 960;
+  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+</script></head>
 <body>
 <div class="hero">
 <img alt="Georgetown Logo" src="Georgetown Logo v3.png"/>
@@ -132,7 +175,6 @@
 <a href="https://apply-link-1.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
 </div>
 </div>
-
 <div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
 <img alt="Unit2" src="Unit2.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
 <h3 style="margin-top: 10px;">Unit 2</h3>
@@ -142,7 +184,6 @@
 <a href="https://apply-link-2.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
 </div>
 </div>
-
 <div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
 <img alt="Unit3" src="Unit3.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
 <h3 style="margin-top: 10px;">Unit 3</h3>
@@ -152,7 +193,6 @@
 <a href="https://apply-link-3.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
 </div>
 </div>
-
 <div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
 <img alt="Unit4" src="Unit4.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
 <h3 style="margin-top: 10px;">Unit 4</h3>
@@ -162,7 +202,6 @@
 <a href="https://apply-link-4.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
 </div>
 </div>
-
 <div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
 <img alt="Unit5" src="Unit5.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
 <h3 style="margin-top: 10px;">Unit 5</h3>
@@ -172,7 +211,6 @@
 <a href="https://apply-link-5.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
 </div>
 </div>
-
 <div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
 <img alt="Unit6" src="Unit6.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
 <h3 style="margin-top: 10px;">Unit 6</h3>
@@ -182,7 +220,6 @@
 <a href="https://apply-link-6.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
 </div>
 </div>
-
 <div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
 <img alt="Unit7" src="Unit7.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
 <h3 style="margin-top: 10px;">Unit 7</h3>
@@ -192,7 +229,6 @@
 <a href="https://apply-link-7.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
 </div>
 </div>
-
 <div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
 <img alt="Unit8" src="Unit8.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
 <h3 style="margin-top: 10px;">Unit 8</h3>
@@ -202,7 +238,6 @@
 <a href="https://apply-link-8.com" style="background: #f59e0b; padding: 8px 12px; border-radius: 20px; color: white; text-decoration: none; font-size: 14px;" target="_blank">Apply</a>
 </div>
 </div>
-
 <div style="background: #ffffff10; border-radius: 12px; padding: 15px; width: 300px; text-align: center; color: #e0f2fe; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
 <img alt="Unit9" src="Unit9.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;"/>
 <h3 style="margin-top: 10px;">Unit 9</h3>
@@ -213,11 +248,8 @@
 </div>
 </div>
 </div></div>
-
-
 <button onclick="scrollUnits(-1)" style="position: absolute; top: 50%; left: -10px; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer;">❮</button>
 <button onclick="scrollUnits(1)" style="position: absolute; top: 50%; right: -10px; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer;">❯</button>
-
 </section><section class="section" id="contact">
 <h2>Contact Us</h2>
 <ul>
