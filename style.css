@@ -19,7 +19,7 @@ body {
 .hero h1 {
   margin-top: -10px; /* adjust this value up/down as needed */
   font-size: 50px;    /* optional: you can adjust size */
-  margin-bottom: 50px;
+  margin-bottom: 5px;
 }
 /* === LOGO IMAGE === */
 .logo {
