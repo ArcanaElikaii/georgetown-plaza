@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const card = document.createElement('div');
     card.className = 'unit-card';
     card.innerHTML = `
-      <img src="Unit${i}.jpg" alt="Unit ${i}"/>
+      <img src="Unit${i}.png" alt="Unit ${i}"/>
       <h3>Unit ${i}</h3>
       <p>$${1000 + i * 25}/mo • Retail/Office</p>
       <div class="card-buttons">
