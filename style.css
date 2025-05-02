@@ -24,6 +24,7 @@ body {
 /* === LOGO IMAGE === */
 .logo {
   width: 220px;
+  margin-top: 20px; /* adjust this value up/down as needed */
   margin-bottom: 20px;
 }
 nav {
