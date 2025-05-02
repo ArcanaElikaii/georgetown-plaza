@@ -17,7 +17,7 @@ body {
   padding: 100px 20px 40px;
 }
 .hero h1 {
-  margin-top: 20px; /* adjust this value up/down as needed */
+  margin-top: -20px; /* adjust this value up/down as needed */
   font-size: 50px;    /* optional: you can adjust size */
   margin-bottom: 20px;
 }
