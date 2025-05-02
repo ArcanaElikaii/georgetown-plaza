@@ -18,7 +18,7 @@ body {
 }
 .hero h1 {
   margin-top: -30px; /* adjust this value up/down as needed */
-  font-size: 45px;    /* optional: you can adjust size */
+  font-size: 80px;    /* optional: you can adjust size */
 }
 /* === LOGO IMAGE === */
 .logo {
