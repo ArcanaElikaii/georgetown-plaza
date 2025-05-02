@@ -17,13 +17,14 @@ body {
   padding: 100px 20px 40px;
 }
 .hero h1 {
-  margin-top: 300px; /* adjust this value up/down as needed */
-  font-size: 60px;    /* optional: you can adjust size */
+  margin-top: -10px; /* adjust this value up/down as needed */
+  font-size: 50px;    /* optional: you can adjust size */
+  margin-bottom: 10px;
 }
 /* === LOGO IMAGE === */
 .logo {
   width: 220px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
 nav {
   display: flex;
