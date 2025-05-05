@@ -18,7 +18,7 @@ function showDetail(phase) {
       detailText = 'New coats of exterior paint,with the color scheme inspired by buildings from La Boca in Argentina, as well as painting the fencing around the building. Landscaping work to freshen up the place.';
       break;
     case 'finishing':
-      detailText = 'Seating, speakers, and any final landscaping decorations';
+      detailText = 'Seating, speakers, and any final landscaping decorations.';
       break;
   }
   detailBox.textContent = detailText;
@@ -27,7 +27,7 @@ function showDetail(phase) {
 // Populate Unit Cards (simplified)
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
-  for (let i = 1; i <= 9; i++) {
+  for (let i = 1; i <= 8; i++) {
     const card = document.createElement('div');
     card.className = 'unit-card';
     card.innerHTML = `
