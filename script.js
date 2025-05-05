@@ -12,13 +12,13 @@ function showDetail(phase) {
       detailText = 'The beginning of the concept creation, vision, 3d Model, and Building Rendering. Work towards revitalizing plaza starts.';
       break;
     case 'demolition':
-      detailText = 'Removal of old materials and structural upgrades.';
+      detailText = 'New upgraded electrical panels installed, wood rot and building framing repairs.';
       break;
     case 'interior':
-      detailText = 'Interior framing, drywall, and installations.';
+      detailText = 'New coats of paint with the color scheme inspired by buildings from La Boca in Argentina, as well as some lighing upgrades. Landscaping work to freshen up the place.';
       break;
     case 'finishing':
-      detailText = 'Painting, final fixtures, inspections, and tenant prep.';
+      detailText = '';
       break;
   }
   detailBox.textContent = detailText;
