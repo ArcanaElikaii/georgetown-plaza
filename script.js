@@ -15,7 +15,7 @@ function showDetail(phase) {
       detailText = 'New upgraded electrical panels installed, wood rot and building framing repairs.';
       break;
     case 'interior':
-      detailText = 'New coats of exterior paint,with the color scheme inspired by buildings from La Boca in Argentina, as well as painting the fencing around the building. Landscaping work to freshen up the place.';
+      detailText = 'New coats of exterior paint, with the color scheme inspired by buildings from La Boca in Argentina, as well as painting the fencing around the building. Landscaping work to freshen up the place.';
       break;
     case 'finishing':
       detailText = 'Seating, speakers, and any final landscaping decorations.';
