@@ -144,7 +144,7 @@ footer iframe {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .model-container {
     display: none;
   }
@@ -158,5 +158,37 @@ footer iframe {
     text-decoration: none;
     border-radius: 6px;
     margin: 1em auto;
+  }
+}
+
+
+/* --- Enhanced Mobile Button Styles --- */
+
+/* Always hide by default */
+.mobile-model-link {
+  display: none;
+}
+
+/* Show and style button on mobile and tablets */
+@media (max-width: 1024px) {
+  .model-container {
+    display: none;
+  }
+
+  .mobile-model-link {
+    display: inline-block;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    padding: 14px 24px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 1.5em auto;
+    display: block;
+    border: 2px solid #0056b3;
+    font-weight: bold;
+    font-size: 1.1em;
   }
 }
