@@ -144,7 +144,7 @@ footer iframe {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .model-container {
     display: none;
   }
