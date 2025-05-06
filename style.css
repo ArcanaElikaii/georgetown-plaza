@@ -138,3 +138,25 @@ footer iframe {
   border-radius: 8px;
   margin-top: 20px;
 }
+
+
+.mobile-model-link {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .model-container {
+    display: none;
+  }
+
+  .mobile-model-link {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 1em auto;
+  }
+}
