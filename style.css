@@ -192,3 +192,27 @@ footer iframe {
     font-size: 1.1em;
   }
 }
+
+
+.mobile-only-button-wrapper {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mobile-only-button {
+    display: inline-block;
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .mobile-only-button-wrapper {
+        display: block;
+    }
+}
