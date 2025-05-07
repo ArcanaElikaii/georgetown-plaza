@@ -1,4 +1,10 @@
 
+function scrollCarousel(direction) {
+  const carousel = document.querySelector('.carousel');
+  const scrollAmount = 300;
+  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
 function showDetail(phase) {
   const detailBox = document.getElementById('timeline-detail');
   let detailText = '';
@@ -18,8 +24,8 @@ function showDetail(phase) {
   }
   detailBox.textContent = detailText;
 }
+window.showDetail = showDetail;
 
-// Populate Unit Cards with custom unit titles
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
   const unitTitles = ["B12", "B13", "C34", "C35", "E25", "E26", "F41", "F42"];
