@@ -1,44 +1,21 @@
 
-function scrollCarousel(direction) {
-  const carousel = document.querySelector('.carousel');
-  const scrollAmount = 300;
-  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-}
-function showDetail(phase) {
-  const detailBox = document.getElementById('timeline-detail');
-  let detailText = '';
-  switch (phase) {
-    case 'design':
-      detailText = 'The beginning of the concept creation, vision, 3d Model, and Building Rendering. Work towards revitalizing plaza starts.';
-      break;
-    case 'demolition':
-      detailText = 'New upgraded electrical panels installed, wood rot and building framing repairs.';
-      break;
-    case 'interior':
-      detailText = 'New coats of exterior paint, with the color scheme inspired by buildings from La Boca in Argentina, as well as painting the fencing around the building. Landscaping work to freshen up the place.';
-      break;
-    case 'finishing':
-      detailText = 'Seating, speakers, and any final landscaping decorations.';
-      break;
-  }
-  detailBox.textContent = detailText;
-}
-
-// Populate Unit Cards (simplified)
+// Populate Unit Cards with custom unit titles
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
-  for (let i = 1; i <= 8; i++) {
+  const unitTitles = ["B12", "B13", "C34", "C35", "E25", "E26", "F41", "F42"];
+
+  unitTitles.forEach((title, index) => {
     const card = document.createElement('div');
     card.className = 'unit-card';
     card.innerHTML = `
-      <img src="Unit${i}.png" alt="Unit ${i}"/>
-      <h3>Unit ${i}</h3>
-      <p>$${1000 + i * 25}/mo • Retail/Office</p>
+      <img src="Unit${index + 1}.png" alt="Unit ${title}"/>
+      <h3>${title}</h3>
+      <p>$${1000 + (index + 1) * 25}/mo • Retail/Office</p>
       <div class="card-buttons">
         <a class="view-btn" href="#">View</a>
         <a class="apply-btn" href="#">Apply</a>
       </div>
     `;
     carousel.appendChild(card);
-  }
+  });
 });
