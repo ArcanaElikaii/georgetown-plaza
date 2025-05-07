@@ -1,4 +1,24 @@
 
+function showDetail(phase) {
+  const detailBox = document.getElementById('timeline-detail');
+  let detailText = '';
+  switch (phase) {
+    case 'design':
+      detailText = 'The beginning of the concept creation, vision, 3d Model, and Building Rendering. Work towards revitalizing plaza starts.';
+      break;
+    case 'demolition':
+      detailText = 'New upgraded electrical panels installed, wood rot and building framing repairs.';
+      break;
+    case 'interior':
+      detailText = 'New coats of exterior paint, with the color scheme inspired by buildings from La Boca in Argentina, as well as painting the fencing around the building. Landscaping work to freshen up the place.';
+      break;
+    case 'finishing':
+      detailText = 'Seating, speakers, and any final landscaping decorations.';
+      break;
+  }
+  detailBox.textContent = detailText;
+}
+
 // Populate Unit Cards with custom unit titles
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('.carousel');
